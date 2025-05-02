@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 200px 0;
+    margin: 0;
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links {
+    display: flex;
+    gap: 28px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* section_1 */
+
+.section_1 {
+    background-color: #1f2937;
+    margin: 0;
+    padding: 80px 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.heroMainText {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.heroSecondaryText, a, footer {
+    font-size: 16px;
+    color: #E5E7EB;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#hero_img {
+    width: 600px;
+}
+
+/* .section_2 {
+    margin: 0;
+    padding: 0 200px;
+    display: flex;
+    justify-content: center;
+} */
+
+.section_2 {
+    padding: 0 200px;
+}
+
+.section_2_content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainText {
+    font-size: 28px;
+    font-weight: 900;
+    padding: 40px;
+    text-align: center;
+}
+
+.bloks_with_img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+#blok_img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882F6;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 2px solid #E5E7EB;
+    box-shadow: none;
+    padding: 5px 25px;
+    flex: none;
+    width: fit-content;
+}
+
+.section_3 {
+    margin: 80px auto;
+    padding: 80px 300px;
+    background-color: #E5E7EB;
+}
+
+.quoter {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-weight: 300;
+}
+
+.author_quoter {
+    text-align: end;
+    font-weight: 700;
+}
+
+.section_4 {
+    margin: 80px 200px;
+    padding: 40px 200px;
+    background-color:  #3882F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_4_content {
+    color: #E5E7EB;
+}
+
+
+footer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
