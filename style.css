@@ -13,6 +13,7 @@ header, footer {
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 200px 0;
     margin: 0;
     
@@ -36,7 +37,12 @@ a {
     text-decoration: none;
 }
 
-/* section_1 */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #f9faf8;
+    cursor: pointer;
+  }
 
 .section_1 {
     background-color: #1f2937;
@@ -69,13 +75,6 @@ a {
 #hero_img {
     width: 600px;
 }
-
-/* .section_2 {
-    margin: 0;
-    padding: 0 200px;
-    display: flex;
-    justify-content: center;
-} */
 
 .section_2 {
     padding: 0 200px;
@@ -128,6 +127,7 @@ button {
     padding: 5px 25px;
     flex: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 .section_3 {
@@ -166,3 +166,92 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    footer, .section_1, .section_2, .section_3, .section_4{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+        padding: 0 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #1f2937;
+        top: 40px;
+        padding: 10px 20px;
+        border: 1px solid #445c94;
+        border-radius: 8px;
+      }
+  
+    .links.show {
+        display: flex;
+    }
+
+    .section_1 {
+        padding: 50px 90px;
+    }
+  
+    .hero {
+      text-align: center;
+      align-items: center;
+    }
+  
+    #hero_img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .section_2 {
+        padding: 0 90px;
+    }
+  
+    .bloks_with_img {
+      gap: 8px;
+    }   
+
+    .blok {
+        max-width: 180px;
+    }
+    
+    #blok_img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .section_3 {
+        padding: 40px 90px;
+        margin: 70px 0;
+    }
+
+    .quoter {
+        font-size: 26px;
+    }
+
+    .section_4 {
+        margin: 40px 90px;
+        padding: 40px 0;
+        gap: 20px;
+        text-align: center;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
