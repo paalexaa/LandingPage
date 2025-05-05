@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', serif;
     margin: 0;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 header, footer {
@@ -24,6 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100%;
     height: 80px;
     align-items: center;
     background-color: transparent;
@@ -100,7 +102,7 @@ a {
     background-size: cover;
     background-position: center;
     margin: 0;
-    padding: 100px 150px 100px;
+    padding: 100px 150px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -180,7 +182,7 @@ a {
     border: 1px solid black;
 }
 
-#blok_img {
+.blok_img {
     width: 100%;
     max-width: 370px;
     max-height: 320px;
@@ -264,7 +266,7 @@ a {
     border-radius: 30px;
 }
 
-#blok_img_4 {
+.blok_img_4 {
     width: 100%;
     max-width: 280px;
     border-radius: 30px;
@@ -386,112 +388,246 @@ footer {
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    footer, .section_1, .section_2, .section_3, .section_4{
-      flex-direction: column;
-      align-items: center;
+/* Малий розмір екранів - телефони */
+@media (max-width: 576px) {
+    header, footer, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6 {
+      padding: 20px;
     }
 
-    header {
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .logo {
-        font-size: 18px;
+    .links,
+    .header_buttons {
+        display: none;
     }
 
     .hamburger {
         display: block;
     }
 
-    .links {
-        display: none;
+    .links.show {
+        display: flex;
         flex-direction: column;
         position: absolute;
         right: 0;
-        background-color: #1f2937;
-        top: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: #E5E7EB;
+        top: 70px;
         padding: 10px 20px;
-        border: 1px solid #445c94;
         border-radius: 8px;
-      }
-  
-    .links.show {
-        display: flex;
-    }
-
-    .section_1 {
-        padding: 40px 30px;
     }
   
     .hero {
-      text-align: center;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
 
-    .heroMainText {
-        font-size: 30px;
-    }
-
-    .heroSecondaryText, a, footer {
-        font-size: 14px;
-    }
-  
-    #hero_img {
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .section_2 {
-        padding: 0 30px;
-    }
-
-    .mainText {
-        font-size: 18px;
-    }
-  
-    .bloks_with_img {
-        gap: 10px;
-        padding: 0 30px;
-    }   
-
-    .blok {
-        max-width: 100px;
-    }
-    
-    #blok_img {
-        max-width: 120px;
-        max-height: 120px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .section_3 {
-        padding: 40px 30px;
-        margin: 50px 0;
-    }
-
-    .quoter {
-        font-size: 20px;
-    }
-
-    .section_4 {
-        margin: 40px 30px;
-        padding: 40px 20px;
-        gap: 25px;
+    .heroMainText, .heroSecondaryText {
         text-align: center;
     }
   
-    button {
+    .mainText, .mainText_sec6 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .section_2_titleText,
+    .section_5_titleText {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section_5_titleText .left,
+    .section_5_titleText .right {
+      max-width: 100%;
+    }
+  
+    .bloks_with_img {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blok, .blok-3, .blok-4 {
+      max-width: 100%;
+      align-items: center;
+    }
+  
+    .right_sec6 img {
+      height: auto;
+    }
+  
+    .section5_img img {
+      max-height: 400px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 30px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mob_footer_p {
+        font-size: 12px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .column {
+        text-align: center;
+    }
+  }
+  
+  
+  /* Планшети */
+  @media (max-width: 1024px) {
+    header, footer, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6 {
+        padding: 50px;
+    }
+
+    .links,
+    .header_buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: #E5E7EB;
+        top: 70px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .mainText {
+        font-size: 36px;
+    }
+
+    .blok, .blok-3, .blok-4 {
+        max-width: 80%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .blok img, .blok-3 img{
+        max-width: 100%;
+        align-items: center;
+      }
+
+    .section_6_content {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .right_sec6, .left_sec6 {
       width: 100%;
-      max-width: 140px;
+    }
+
+    .section_5_titleText {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section_5_titleText .left,
+    .section_5_titleText .right {
+        max-width: 80%;
+        text-align: center;
+    }
+  
+    .section_5_titleText .left .mainText {
+        font-size: 36px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .right button {
+        margin-top: 20px;
+    }
+  
+    .section5_img img {
+      max-height: 500px;
+    }
+  
+    .footer {
+      gap: 60px;
+    }
+  
+    .section_5_titleText {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  /* Дуже малі екрани */
+  @media (max-width: 440px) {
+    header, footer, .section_1, .section_2, .section_3, .section_4, .section_5, .section_6 {
+        padding: 40px;
+      }
+
+    .links,
+    .header_buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: #E5E7EB;
+        top: 70px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .heroMainText {
+      font-size: 22px;
+    }
+  
+    .btn-outline, .btn-solid, .btn-outline-sec2 {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blok, .blok-3, .blok-4 {
+        max-width: 100%;
+        align-items: center;
+        margin: 15px;
+      }
+  
+    .section_5 {
+      padding: 40px 20px;
     }
   }
   
