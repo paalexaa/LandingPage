@@ -29,6 +29,7 @@ header {
     height: 80px;
     align-items: center;
     background-color: transparent;
+    z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
@@ -89,13 +90,24 @@ a {
 
 }
 
-
 .hamburger {
     display: none;
     font-size: 24px;
     color: #f9faf8;
     cursor: pointer;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+    will-change: opacity, transform;
   }
+  
+.show {
+opacity: 1;
+transform: translateY(0);
+}
 
 .section_1 {
     background-image: url('pic/hero_back.png');
@@ -243,7 +255,6 @@ a {
     min-height: 50px; 
     cursor: pointer;
 }
-
 
 .section_3 {
     margin: 80px auto 0;

@@ -28,6 +28,7 @@ header {
     height: 80px;
     align-items: center;
     background-color: white;
+    z-index: 1000;
     transition: background-color 0.3s ease;
     border-bottom: 1px solid #1f2937;
 }
@@ -87,7 +88,6 @@ a {
     flex: none;
     width: fit-content;
     cursor: pointer;
-
 }
 
 .hamburger {
@@ -95,6 +95,30 @@ a {
     font-size: 24px;
     color: black;
     cursor: pointer;
+}
+
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+    will-change: opacity, transform;
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+    will-change: opacity, transform;
+  }
+  
+.show {
+opacity: 1;
+transform: translateY(0);
+}}
+  
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section {
