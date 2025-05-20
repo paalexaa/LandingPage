@@ -1,6 +1,6 @@
 # Portfolio Landing Page
 
-This is a personal portfolio landing page created to showcase my skills, projects, and contact information. The site is designed to be clean, modern, and responsive, making it accessible on both desktop and mobile devices.
+This is a personal portfolio landing page created to showcase my skills. The site is designed to be clean, modern, and responsive, making it accessible on both desktop and mobile devices.
 
 ## Live Demo
 
