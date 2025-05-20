@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelector(".links");
   const linkItems = document.querySelectorAll(".links a");
   const header = document.querySelector("header");
+  const learnMoreBtn = document.querySelectorAll(".learn-more");
+  const learnMoreBtn2 = document.querySelectorAll(".learn-more-2");
 
   // Toggle menu
   hamburger.addEventListener("click", function () {
@@ -26,5 +28,43 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       header.classList.remove("scrolled");
     }
+  });
+
+   // Change button style
+   learnMoreBtn.forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      button.classList.remove("btn-outline-sec2");
+      button.classList.add("btn-solid-sec2");
+    });
+
+    button.addEventListener("mouseleave", () => {
+      button.classList.remove("btn-solid-sec2");
+      button.classList.add("btn-outline-sec2");
+    });
+
+    button.addEventListener("click", () => {
+      window.location.href = "links/destinations.html";
+    });
+  });
+
+    // Change button style for another section
+    learnMoreBtn2.forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      button.classList.remove("btn-outline-sec2");
+      button.classList.add("btn-solid-sec2");
+    });
+
+    button.addEventListener("mouseleave", () => {
+      button.classList.remove("btn-solid-sec2");
+      button.classList.add("btn-outline-sec2");
+    });
+
+    button.addEventListener("click", () => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   });
 });

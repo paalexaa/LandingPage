@@ -228,6 +228,22 @@ a {
     cursor: pointer;
 }
 
+.btn-solid-sec2 {
+    margin: 0 30px 25px;
+    background-color: #2c3464;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 2px solid #2c3464;
+    box-shadow: none;
+    padding: 12px 25px;
+    flex: none;
+    width: fit-content;
+    min-width: 150px;
+    min-height: 50px; 
+    cursor: pointer;
+}
+
 
 .section_3 {
     margin: 80px auto 0;
